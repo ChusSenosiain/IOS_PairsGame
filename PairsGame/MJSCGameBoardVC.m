@@ -126,7 +126,7 @@
 -(void)animateCell:(NSIndexPath *) indexPath
               show:(BOOL) show {
     
-    MJSCGameCell *cell = [self.gameBoard cellForItemAtIndexPath:indexPath];
+    MJSCGameCell *cell = (MJSCGameCell *)[self.gameBoard cellForItemAtIndexPath:indexPath];
     MJSCCard *card = [self.cards cardAtIndex:indexPath.row];
     
     UIImage *image;
